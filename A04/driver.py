@@ -22,11 +22,6 @@ rand_PF = cmd_pkg.rand(processes, ph_mem_size)
 lfu_PF = cmd_pkg.lfu(processes, ph_mem_size)
 lru_PF = cmd_pkg.lru(processes, ph_mem_size)
 
-print(fifo_PF)
-print(rand_PF)
-print(lfu_PF)
-print(lru_PF)
-
 #Graph and display the page faults per algorithm
 cmd_pkg.bar_graph(fifo_PF, lfu_PF, lru_PF, rand_PF, ph_mem_size)
 
